@@ -14,7 +14,8 @@ function MyApp({ Component, pageProps }) {
       <nav className="navbar navbar-expand-lg bg-light">
         <div className="container">
           <a className="navbar-brand" href="#">
-            KWE
+            <i className="bi bi-bootstrap-fill" style={{
+              color: "#642DEB"}}></i> KWE
           </a>
           <button
             className="navbar-toggler"
@@ -73,7 +74,7 @@ function MyApp({ Component, pageProps }) {
             >
               <i className="bi bi-bootstrap-fill"></i>
             </a>
-            <span className="text-muted">&copy; 2021 Company, Inc</span>
+            <span className="text-muted">&copy; 2022 Company, Inc</span>
           </div>
 
           <ul className="nav col-md-4 justify-content-end list-unstyled d-flex">
