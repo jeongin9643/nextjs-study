@@ -1,6 +1,4 @@
-import "../styles/globals.css";
 import "bootstrap/dist/css/bootstrap.css";
-import "bootstrap-icons/font/bootstrap-icons.css";
 import { useEffect } from "react";
 import Link from "next/link";
 
@@ -12,9 +10,9 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-light">
-        <div className="container">
+        <div className="container-fluid">
           <a className="navbar-brand" href="#">
-            KWE
+            Kwe
           </a>
           <button
             className="navbar-toggler"
@@ -55,45 +53,33 @@ function MyApp({ Component, pageProps }) {
         </div>
       </nav>
 
-      <div className="container">
+      <div className="container-fluid">
         <div className="row">
-          <div className="col-3 bg-danger">col-8</div>
-          <div className="col-9 bg-info" style={{ minHeight: "300px" }}>
-            {" "}
-            <Component {...pageProps} />
-          </div>
-        </div>
-      </div>
-      <div className="container">
-        <footer className="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-          <div className="col-md-4 d-flex align-items-center">
-            <a
-              href="/"
-              className="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"
-            >
-              <i className="bi bi-bootstrap-fill"></i>
-            </a>
-            <span className="text-muted">&copy; 2021 Company, Inc</span>
-          </div>
+          <nav
+            id="sidebarMenu"
+            className="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse"
+          >
+            <div className="position-sticky pt-3">
+              <ul className="nav flex-column">
+                <li className="nav-item">
+                  <a className="nav-link active" aria-current="page" href="#">
+                    <span
+                      data-feather="home"
+                      className="align-text-bottom"
+                    ></span>
+                    Dashboard
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
 
-          <ul className="nav col-md-4 justify-content-end list-unstyled d-flex">
-            <li className="ms-3">
-              <a className="text-muted" href="#">
-                <i className="bi bi-twitter"></i>
-              </a>
-            </li>
-            <li className="ms-3">
-              <a className="text-muted" href="#">
-                <i className="bi bi-facebook"></i>
-              </a>
-            </li>
-            <li className="ms-3">
-              <a className="text-muted" href="#">
-                <i className="bi bi-instagram"></i>
-              </a>
-            </li>
-          </ul>
-        </footer>
+          <main className="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+            <div className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+              <Component {...pageProps} />
+            </div>
+          </main>
+        </div>
       </div>
     </>
   );
