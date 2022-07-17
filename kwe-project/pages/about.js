@@ -1,3 +1,5 @@
+import MainLayout from "../layouts/MainLayout";
+
 export default function About() {
   return (
     <>
@@ -5,3 +7,6 @@ export default function About() {
     </>
   );
 }
+About.getLayout = function getLayout(page) {
+  return <MainLayout>{page}</MainLayout>;
+};

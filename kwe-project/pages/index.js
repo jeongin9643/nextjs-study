@@ -1,12 +1,10 @@
+import MainLayout from "../layouts/MainLayout";
+
 export default function Home() {
   return (
     <>
-    <div>
+      <div>
         index.js
-        
-      
-
-      
         {/* 
 
         <App>
@@ -34,7 +32,11 @@ export default function Home() {
         </App>
 
         */}
-    </div>
+      </div>
     </>
   );
 }
+
+Home.getLayout = function getLayout(page) {
+  return <MainLayout>{page}</MainLayout>;
+};
