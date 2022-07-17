@@ -1,7 +1,8 @@
 export default function Product() {
     return (
         <>
-        <div>Product</div>
+            <div>product</div>
+            <h1>aaaa</h1>
         </>
     )
 }

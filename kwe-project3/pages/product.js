@@ -1,7 +1,11 @@
-export default function Product() {
+export default function Product () {
     return (
         <>
-        <div>Product</div>
+            <div>Product입니다.
+                
+                <h1>aaaa</h1>
+            </div>
+        
         </>
-    )
+)
 }
