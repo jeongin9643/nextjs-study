@@ -1,7 +1,7 @@
-import WarehouseInLayout from "../layouts/warehouse-in-layout";
+import WarehouseInLayout from "../../layouts/warehouse-in-layout";
 
 function WarehouseIn() {
-  return <div>입고입니다</div>;
+  return <div>입고 index.js 입니다</div>;
 }
 
 export default WarehouseIn;

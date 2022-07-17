@@ -11,28 +11,28 @@ const WarehouseInLayout = ({ children }) => {
           <div className="col-3 border-top border-end p-2">
             <ul className="list-group list-group-flush">
               <li className="list-group-item">
-              {/* <Link href={`/warehouse-in/aaa`}>
+                {/* <Link href={`/warehouse-in/aaa`}>
                 <a>
                   <div>
                     <strong>${item.price}</strong>
                   </div>
                 </a>
               </Link> */}
-                <Link href="/warehouse-in">
+                <Link href="/warehouse-in/1">
                   <a className="nav-link active" aria-current="page" href="#">
                     입고1
                   </a>
                 </Link>
               </li>
               <li className="list-group-item">
-                <Link href="/warehouse-in">
+                <Link href="/warehouse-in/two">
                   <a className="nav-link active" aria-current="page" href="#">
                     입고2
                   </a>
                 </Link>
               </li>
               <li className="list-group-item">
-                <Link href="/warehouse-in">
+                <Link href="/warehouse-in/three-three">
                   <a className="nav-link active" aria-current="page" href="#">
                     입고3
                   </a>
