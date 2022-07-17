@@ -1,42 +1,13 @@
-import MainLayout from "../layouts/MainLayout";
+import DashboardLayout from "../layouts/dashboard-layout";
 
-export default function Home() {
+export default function Dashboard() {
   return (
     <>
-      <div>
-        index.js
-        {/* 
-
-        <App>
-          <MainLayout>
-            <Home>
-              // Content
-            </Home>
-          </MainLayout>
-        </App>
-
-        <App>
-          <MainLayout>
-            <About>
-              // Content
-            </About>
-          </MainLayout>
-        </App>
-
-        <App>
-          <LoginLayout>
-            <Login>
-              // Content
-            </Login>
-          </LoginLayout>
-        </App>
-
-        */}
-      </div>
+      <div>대시보드입니다</div>
     </>
   );
 }
 
-Home.getLayout = function getLayout(page) {
-  return <MainLayout>{page}</MainLayout>;
+Dashboard.getLayout = function getLayout(page) {
+  return <DashboardLayout>{page}</DashboardLayout>;
 };

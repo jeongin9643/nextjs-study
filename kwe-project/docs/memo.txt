@@ -1,0 +1,42 @@
+
+        <App>
+          <MainLayout>
+            <Home>
+              // Content
+            </Home>
+          </MainLayout>
+        </App>
+
+        <App>
+          <MainLayout>
+            <About>
+              // Content
+            </About>
+          </MainLayout>
+        </App>
+
+        <App>
+          <LoginLayout>
+            <Login>
+              // Content
+            </Login>
+          </LoginLayout>
+        </App>
+
+Menu : 파일명/경로명 : 컴포넌트명 
+
+- 입고: warehouse-in : WarehouseIn 
+- 입고 레이아웃: warehouse-in-layout: WarehouseInLayout
+
+- 출고: warehouse-out : WarehouseOut : warehouse-out-layout
+- 출고 레이아웃: warehouse-out-layout: WarehouseOutLayout
+
+- 재고: stock : Stock
+- 재고 레이아웃: stock-layout : StockLayout
+
+- 대시보드(홈): dashboard : dashboard
+- 대시보드 레이아웃: dashboard-layout : DashboardLayout
+
+- 로그인: sign-in : SignIn
+- 사용자 등록: sign-up : SignUp
+- 레이아웃: sign-layout : SignLayout

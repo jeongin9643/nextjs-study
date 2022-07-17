@@ -34,23 +34,37 @@ const Nav = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link href="/about">
+              <Link href="/warehouse-in">
                 <a className="nav-link active" aria-current="page" href="#">
-                  About
+                  입고
                 </a>
               </Link>
             </li>
             <li className="nav-item">
-              <Link href="/product">
+              <Link href="/warehouse-out">
                 <a className="nav-link active" aria-current="page" href="#">
-                  Product
+                  출고
                 </a>
               </Link>
             </li>
             <li className="nav-item">
-              <Link href="/login">
+              <Link href="/stock">
                 <a className="nav-link active" aria-current="page" href="#">
-                  Login
+                  재고
+                </a>
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link href="/sign-in">
+                <a className="nav-link active" aria-current="page" href="#">
+                  Sign-in
+                </a>
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link href="/sign-up">
+                <a className="nav-link active" aria-current="page" href="#">
+                  Sign-up
                 </a>
               </Link>
             </li>

@@ -1,23 +1,20 @@
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 
-const MainLayout = ({ children }) => {
+const SignLayout = ({ children }) => {
   return (
     <div>
       <Nav />
       <div className="container">
         <div className="row">
-          <div className="col-3 bg-danger">col-8</div>
-          <div className="col-9 bg-info" style={{ minHeight: "300px" }}>
+          <div className="col py-5">
             {children}
-            {/* <Component {...pageProps} /> */}
           </div>
         </div>
       </div>
-      {/* <div>{children}</div> */}
       <Footer />
     </div>
   );
 };
 
-export default MainLayout;
+export default SignLayout;

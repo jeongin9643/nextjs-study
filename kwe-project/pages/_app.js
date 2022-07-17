@@ -2,7 +2,6 @@ import "../styles/globals.css";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import { useEffect } from "react";
-import MainLayout from "../layouts/MainLayout";
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
