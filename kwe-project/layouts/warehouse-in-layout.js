@@ -11,6 +11,13 @@ const WarehouseInLayout = ({ children }) => {
           <div className="col-3 border-top border-end p-2">
             <ul className="list-group list-group-flush">
               <li className="list-group-item">
+              {/* <Link href={`/warehouse-in/aaa`}>
+                <a>
+                  <div>
+                    <strong>${item.price}</strong>
+                  </div>
+                </a>
+              </Link> */}
                 <Link href="/warehouse-in">
                   <a className="nav-link active" aria-current="page" href="#">
                     입고1
