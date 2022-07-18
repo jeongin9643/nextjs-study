@@ -11,21 +11,21 @@ const StockLayout = ({ children }) => {
           <div className="col-3 border-top border-end p-2">
             <ul className="list-group list-group-flush">
               <li className="list-group-item">
-                <Link href="/stock">
+                <Link href="/my-stock/1">
                   <a className="nav-link active" aria-current="page" href="#">
                     재고1
                   </a>
                 </Link>
               </li>
               <li className="list-group-item">
-                <Link href="/stock">
+                <Link href="/my-stock/two">
                   <a className="nav-link active" aria-current="page" href="#">
                     재고2
                   </a>
                 </Link>
               </li>
               <li className="list-group-item">
-                <Link href="/stock">
+                <Link href="/my-stock">
                   <a className="nav-link active" aria-current="page" href="#">
                     재고3
                   </a>

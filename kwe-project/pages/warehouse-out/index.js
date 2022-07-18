@@ -1,7 +1,7 @@
-import WarehouseOutLayout from "../layouts/warehouse-out-layout";
+import WarehouseOutLayout from "../../layouts/warehouse-out-layout";
 
 function WarehouseOut() {
-  return <div>출고입니다</div>;
+  return <div>출고 index.js 입니다</div>;
 }
 
 export default WarehouseOut;

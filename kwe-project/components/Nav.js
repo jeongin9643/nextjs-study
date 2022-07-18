@@ -27,7 +27,7 @@ const Nav = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <Link href="/">
+              <Link href="/dashboard">
                 <a className="nav-link active" aria-current="page" href="#">
                   Home
                 </a>
@@ -48,7 +48,7 @@ const Nav = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link href="/stock">
+              <Link href="/my-stock">
                 <a className="nav-link active" aria-current="page" href="#">
                   재고
                 </a>

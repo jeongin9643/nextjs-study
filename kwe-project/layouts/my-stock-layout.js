@@ -2,7 +2,7 @@ import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import Link from "next/link";
 
-const WarehouseOutLayout = ({ children }) => {
+const MyStockLayout = ({ children }) => {
   return (
     <div>
       <Nav />
@@ -11,23 +11,23 @@ const WarehouseOutLayout = ({ children }) => {
           <div className="col-3 border-top border-end p-2">
             <ul className="list-group list-group-flush">
               <li className="list-group-item">
-                <Link href="/warehouse-out/1">
+                <Link href="/my-stock/1">
                   <a className="nav-link active" aria-current="page" href="#">
-                    출고1
+                    재고1
                   </a>
                 </Link>
               </li>
               <li className="list-group-item">
-                <Link href="/warehouse-out/two">
+                <Link href="/my-stock/two">
                   <a className="nav-link active" aria-current="page" href="#">
-                    출고2
+                    재고2
                   </a>
                 </Link>
               </li>
               <li className="list-group-item">
-                <Link href="/warehouse-out/three-three">
+                <Link href="/my-stock/three-three">
                   <a className="nav-link active" aria-current="page" href="#">
-                    출고3
+                    재고3
                   </a>
                 </Link>
               </li>
@@ -43,4 +43,4 @@ const WarehouseOutLayout = ({ children }) => {
   );
 };
 
-export default WarehouseOutLayout;
+export default MyStockLayout;
