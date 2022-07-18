@@ -11,23 +11,23 @@ const MyStockLayout = ({ children }) => {
           <div className="col-3 border-top border-end p-2">
             <ul className="list-group list-group-flush">
               <li className="list-group-item">
-                <Link href="/my-stock/1">
+                <Link href="/my-stock/first-ten">
                   <a className="nav-link active" aria-current="page" href="#">
-                    재고1
+                    재고1 (10건)
                   </a>
                 </Link>
               </li>
               <li className="list-group-item">
-                <Link href="/my-stock/two">
+                <Link href="/my-stock/next-ten">
                   <a className="nav-link active" aria-current="page" href="#">
-                    재고2
+                    재고2 (다음 10건)
                   </a>
                 </Link>
               </li>
               <li className="list-group-item">
-                <Link href="/my-stock/three-three">
+                <Link href="/my-stock/remains">
                   <a className="nav-link active" aria-current="page" href="#">
-                    재고3
+                    재고3 (나머지 모두)
                   </a>
                 </Link>
               </li>
