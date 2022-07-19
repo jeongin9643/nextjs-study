@@ -1,16 +1,16 @@
-import MyStockLayout from "../../layouts/my-stock-layout";
+import InventoryLayout from "../../layouts/inventory-layout";
 import { useRouter } from "next/router";
 import Axios from "axios";
 import { useEffect, useState } from "react";
 
-function Remains() {
+function FirstTen() {
   const router = useRouter();
   const { id } = router.query;
   const [list, setList] = useState([]);
 
   const API_URL = "https://jsonplaceholder.typicode.com/todos";
-
-  function getData() {
+  
+    function getData() {
     Axios.get(API_URL).then((res) => {
       console.log(res.data);
       setList(res.data);
@@ -23,11 +23,10 @@ function Remains() {
 
   return (
     <div>
-      {list.slice(20).map((item) => {
-        //   return <div key={item.id}>{ item.id}. {item.title}</div>;
-        return (
+      {list.slice(0,10).map((item) => {
+          return(
           <div key={item.id} className="card mb-2" style={{ width: "100%" }}>
-            <img
+          <img
               src="/assets/img/bootstrap-logo.svg"
               className="card-img-top mt-3 ms-3"
               alt="..."
@@ -41,13 +40,13 @@ function Remains() {
               </a>
             </div>
           </div>
-        );
+          )
       })}
     </div>
   );
 }
 
-export default Remains;
-Remains.getLayout = function getLayout(page) {
-  return <MyStockLayout>{page}</MyStockLayout>;
+export default FirstTen;
+FirstTen.getLayout = function getLayout(page) {
+  return <InventoryLayout>{page}</InventoryLayout>;
 };

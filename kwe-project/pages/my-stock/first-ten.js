@@ -23,10 +23,26 @@ function FirstTen() {
 
   return (
     <div>
-      {list.slice(0,10).map((item) => {
-          return <div key={item.id}>{ item.id}. {item.title}</div>;
+      {list.slice(0, 10).map((item) => {
+        // <div key={item.id}>{item.id}. {item.title}</div>;
+        return (
+          <div key={item.id} className="card mb-2" style={{ width: "100%" }}>
+            <img
+              src="/assets/img/bootstrap-logo.svg"
+              className="card-img-top mt-3 ms-3"
+              alt="..."
+              style={{ height: "20px", width: "20px" }}
+            />
+            <div className="card-body">
+              <h5 className="card-title">{item.title}</h5>
+              <p className="card-text">{item.id}</p>
+              <a href="#" className="btn btn-primary">
+                Go somewhere
+              </a>
+            </div>
+          </div>
+        );
       })}
-    
     </div>
   );
 }
