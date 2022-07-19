@@ -1,4 +1,4 @@
-import DashboardLayout from "../../layouts/dashboard-layout";
+import DashboardLayout from "../layouts/dashboard-layout";
 import { useRouter } from 'next/router'
 
 function Dashboard() {

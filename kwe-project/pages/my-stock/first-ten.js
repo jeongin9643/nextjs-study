@@ -6,14 +6,14 @@ import { useEffect, useState } from "react";
 function FirstTen() {
   const router = useRouter();
   const { id } = router.query;
-  const [list, setList] = useState([]);
+  const [todos, setTodos] = useState([]);
 
   const API_URL = "https://jsonplaceholder.typicode.com/todos";
 
   function getData() {
     Axios.get(API_URL).then((res) => {
       console.log(res.data);
-      setList(res.data);
+      setTodos(res.data);
     });
   }
 
@@ -21,12 +21,19 @@ function FirstTen() {
     getData();
   }, []);
 
+  function handleTodoClick(id) {
+    const newTodos = [...todos]
+    const todo = newTodos.find(todo => todo.id === id)
+    todo.completed = !todo.completed
+    setTodos(newTodos)
+    console.log(todos);
+  }
+
   return (
     <div>
-      {list.slice(0, 10).map((item) => {
-        // <div key={item.id}>{item.id}. {item.title}</div>;
+      {todos.map((todo) => {
         return (
-          <div key={item.id} className="card mb-2" style={{ width: "100%" }}>
+          <div key={todo.id} className="card mb-2" style={{ width: "100%" }}>
             <img
               src="/assets/img/bootstrap-logo.svg"
               className="card-img-top mt-3 ms-3"
@@ -34,8 +41,15 @@ function FirstTen() {
               style={{ height: "20px", width: "20px" }}
             />
             <div className="card-body">
-              <h5 className="card-title">{item.title}</h5>
-              <p className="card-text">{item.id}</p>
+              <h5 className={"card-title " + (todo.completed ? 'bg-warning text-decoration-line-through': 'bg-info')}>{todo.title}</h5>
+              <p className="card-text">
+                {todo.id}
+                <input
+                  type="checkbox"
+                  checked={todo.completed}
+                  onChange={() => handleTodoClick(todo.id)}
+                />
+              </p>
               <a href="#" className="btn btn-primary">
                 Go somewhere
               </a>

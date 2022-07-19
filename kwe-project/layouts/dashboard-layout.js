@@ -11,21 +11,21 @@ const DashboardLayout = ({ children }) => {
           <div className="col-3 border-top border-end p-2">
             <ul className="list-group list-group-flush">
               <li className="list-group-item">
-                <Link href="/dashboard/1">
+                <Link href="/1">
                   <a className="nav-link active" aria-current="page" href="#">
                     대시보드1
                   </a>
                 </Link>
               </li>
               <li className="list-group-item">
-                <Link href="/dashboard/two">
+                <Link href="/two">
                   <a className="nav-link active" aria-current="page" href="#">
                     대시보드2
                   </a>
                 </Link>
               </li>
               <li className="list-group-item">
-                <Link href="/dashboard/three-three">
+                <Link href="/three-three">
                   <a className="nav-link active" aria-current="page" href="#">
                     대시보드3
                   </a>
