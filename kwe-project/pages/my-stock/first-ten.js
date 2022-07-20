@@ -65,3 +65,4 @@ export default FirstTen;
 FirstTen.getLayout = function getLayout(page) {
   return <MyStockLayout>{page}</MyStockLayout>;
 };
+// useState 배열 형태로 반환
