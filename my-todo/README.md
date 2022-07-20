@@ -29,7 +29,16 @@ todolist를 작성해서 체크박스를 통해 완료한 것들을 지운다.
 - todoList 
 - todo 
 - signIn/signOut
-- 
+
+서비스 구상-메뉴 (개인용/기업용?)
+보이는 이름, 경로
+- 블로그, blog
+- 포트폴리오, portfolio
+- todo, todo
+- 다이어리, diary
+- 홈페이지, homepage
+
+
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
